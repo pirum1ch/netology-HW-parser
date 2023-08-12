@@ -4,25 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80db2a24-de3f-45d0-82e8-3de5813417a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSVtoJSON/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSVtoJSON/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSVtoJSON/new_json.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSVtoJSON/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSVtoJSON/src/main/java/ru/netology/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSVtoJSON/src/main/java/ru/netology/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JSON/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JSON/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JSON/src/main/java/ru/netology/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMLtoJSON/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMLtoJSON/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMLtoJSON/src/main/java/ru/netology/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Main.java" afterDir="false" />
+    <list default="true" id="80db2a24-de3f-45d0-82e8-3de5813417a4" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/XMLtoJSON/data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSVtoJSON/src/main/java/ru/netology/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/CSVtoJSON/src/main/java/ru/netology/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSVtoJSON/src/main/java/ru/netology/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CSVtoJSON/src/main/java/ru/netology/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMLtoJSON/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XMLtoJSON/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XMLtoJSON/src/main/java/ru/netology/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/XMLtoJSON/src/main/java/ru/netology/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +44,33 @@
     "settings.editor.selected.configurable": "Csv.Editor.Settings"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.netology.Main" />
+      <module name="CSVtoJSON" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.netology.Main" />
+      <module name="XMLtoJSON" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="parser [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -83,6 +97,17 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Maven.parser [clean,install]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -93,6 +118,14 @@
       <option name="presentableId" value="Default" />
       <updated>1691748736889</updated>
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1691756972674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691756972674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,5 +141,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/XMLtoJSON/src/main/java/ru/netology/Main.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

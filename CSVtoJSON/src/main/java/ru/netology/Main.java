@@ -39,7 +39,7 @@ public class Main {
                 var csv = new CsvToBeanBuilder<Employee>(reader).withMappingStrategy(strategy).build();
                 list = csv.parse();
 
-                list.stream().map(Employee::getFirstName).forEach(System.out::println);
+                list.stream().map(Employee::toString).forEach(System.out::println);
 
             } catch (IOException e) {
                 throw new RuntimeException(e);

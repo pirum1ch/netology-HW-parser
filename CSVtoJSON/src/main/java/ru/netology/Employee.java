@@ -20,4 +20,9 @@ public class Employee {
     public String getFirstName() {
         return firstName;
     }
+
+    @Override
+    public String toString(){
+        return id + " " + firstName + " " + lastName + " " + country + " " + age;
+    }
 }
