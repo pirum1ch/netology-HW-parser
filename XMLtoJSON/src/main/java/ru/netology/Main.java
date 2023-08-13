@@ -2,7 +2,10 @@ package ru.netology;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.w3c.dom.*;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -41,31 +44,18 @@ public class Main {
         }
     }
 
-    private void readXML(Node node){
+    private void readXML(Node node) {
         NodeList nodeList = node.getChildNodes();
         for (int i = 0; i < nodeList.getLength(); i++) {
             Node node2 = nodeList.item(i);
             if (Node.ELEMENT_NODE == node2.getNodeType()) {
                 Element element = (Element) node2;
-                long id = Long.parseLong(element.getElementsByTagName("id").item(0).getTextContent());;
-                String firstName = element.getElementsByTagName("firstName").item(0).getTextContent();;
-                String lastName = element.getElementsByTagName("lastName").item(0).getTextContent();;
-                String country = element.getElementsByTagName("country").item(0).getTextContent();;
+                long id = Long.parseLong(element.getElementsByTagName("id").item(0).getTextContent());
+                String firstName = element.getElementsByTagName("firstName").item(0).getTextContent();
+                String lastName = element.getElementsByTagName("lastName").item(0).getTextContent();
+                String country = element.getElementsByTagName("country").item(0).getTextContent();
                 int age = Integer.parseInt(element.getElementsByTagName("age").item(0).getTextContent());
-                list.add(new Employee(id, firstName,lastName, country, age));
-
-//                NamedNodeMap map = element.getAttributes();
-//                for (int j = 0; j < map.getLength(); j++) {
-//                    System.out.println(map.item(j).getNodeName());
-//                    System.out.println(map.item(j).getNodeValue());
-//                        long id = Long.parseLong(map.item(0).getNodeValue());;
-//                        String firstName = map.item(1).getNodeValue();
-//                        String lastName = map.item(2).getNodeValue();
-//                        String country = map.item(3).getNodeValue();
-//                        int age = Integer.parseInt(map.item(4).getNodeValue());
-//                        list.add(new Employee(id, firstName,lastName, country, age));
-//                }
-//                readXML(node2);
+                list.add(new Employee(id, firstName, lastName, country, age));
             }
         }
 

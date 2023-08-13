@@ -1,7 +1,6 @@
 package ru.netology;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.opencsv.CSVReader;
 import com.opencsv.bean.ColumnPositionMappingStrategy;
@@ -51,7 +50,8 @@ public class Main {
 
     public void listToJSON() {
         Gson gson = new Gson();
-        Type listType = new TypeToken<List<Employee>>() {}.getType();
+        Type listType = new TypeToken<List<Employee>>() {
+        }.getType();
 
         try (FileWriter fw = new FileWriter(JSONDFILENAME)) {
             String json = gson.toJson(list, listType);
