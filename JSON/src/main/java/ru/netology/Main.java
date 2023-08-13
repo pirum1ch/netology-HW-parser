@@ -18,7 +18,8 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-        main.jsonToList(main.readString());
+        List<Employee> list = main.jsonToList(main.readString());
+        System.out.println(list);
 
     }
 
@@ -35,7 +36,7 @@ public class Main {
         }
     }
 
-    public void jsonToList(String string) {
+    public List<Employee> jsonToList(String string) {
         List<Employee> listEmployee = new ArrayList<>();
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
@@ -46,7 +47,6 @@ public class Main {
             Employee m = gson.fromJson(jsonArray.get(i), Employee.class);
             listEmployee.add(m);
         }
-
-        System.out.println(listEmployee);
+        return listEmployee;
     }
 }
