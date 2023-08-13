@@ -15,7 +15,7 @@ import java.util.List;
 
 public class Main {
 
-    List<Employee> list;
+    private List<Employee> list;
     private static final String CSVDFILENAME = "/Users/dmitry.pirumov/IdeaProjects/Netology/Netology_HW/parser/CSVtoJSON/data.csv";
     private static final String JSONDFILENAME = "/Users/dmitry.pirumov/IdeaProjects/Netology/Netology_HW/parser/CSVtoJSON/new_json.json";
     private final String[] CSVCOLUMNMAPPING = {"id", "firstName", "lastName", "country", "age"};

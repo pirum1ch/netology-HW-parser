@@ -20,7 +20,7 @@ import java.util.List;
 
 public class Main {
 
-    List<Employee> list = new ArrayList<>();
+    private List<Employee> list = new ArrayList<>();
     private static final String JSONDFILENAME = "/Users/dmitry.pirumov/IdeaProjects/Netology/Netology_HW/parser/XMLtoJSON/new_json.json";
     private static final String XMLFILENAME = "/Users/dmitry.pirumov/IdeaProjects/Netology/Netology_HW/parser/XMLtoJSON/data.xml";
 
