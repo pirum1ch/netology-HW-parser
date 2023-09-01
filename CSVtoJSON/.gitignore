@@ -3,7 +3,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 .idea
-new_json.json
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
